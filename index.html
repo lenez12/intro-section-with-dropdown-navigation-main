@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<title>Jery Lenas| Intro section with dropdown navigation</title>
+	</head>
+	<body>
+		<header class="header" id="header">
+			<nav class="nav container" id="nav">
+				<a href="#" class="nav_logo">
+					<img src="images/logo.svg" alt="" class="nav_logo_img" />
+				</a>
+
+				<a
+					href="#"
+					onclick="openNav()"
+					class="nav_collapse_menu"
+					id="nav-collapse-menu"
+				>
+					<img src="images/icon-menu.svg" alt="" class="menu_img" />
+				</a>
+			</nav>
+		</header>
+		<div id="overlay" onclick="closeNav()" class="overlay active"></div>
+		<div class="navbar_collapse active" id="navbar-collapse">
+			<ul class="navbar_nav grid">
+				<li class="nav_item dropdown">
+					<a class="nav_link" href="#">
+						<span>Features</span>
+						<div class="dropdown_toggle"></div>
+					</a>
+					<div
+						class="dropdown_menu dropdown_menu_icon"
+						aria-labelledby="navbarDropdown"
+					>
+						<a class="dropdown_item" href="#">Todo List</a>
+						<a class="dropdown_item" href="#">Calendar</a>
+						<a class="dropdown_item" href="#">Reminder</a>
+						<a class="dropdown_item" href="#">Planning</a>
+					</div>
+				</li>
+				<li class="nav_item dropdown">
+					<a class="nav_link" href="#">
+						<span>Company</span>
+						<div class="dropdown_toggle"></div>
+					</a>
+					<div class="dropdown_menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown_item" href="#">History</a>
+						<a class="dropdown_item" href="#">Our Team</a>
+						<a class="dropdown_item" href="#">Blog</a>
+					</div>
+				</li>
+				<li class="nav_item">
+					<a href="#" class="nav_link">Careers</a>
+				</li>
+				<li class="nav_item">
+					<a href="#" class="nav_link">About</a>
+				</li>
+			</ul>
+
+			<div class="navbar_btns flex">
+				<button class="btn btn-text">Login</button>
+				<button class="btn btn-outlined">Register</button>
+			</div>
+			<a href="#" onclick="closeNav()">
+				<img
+					src="images/icon-close-menu.svg"
+					alt=""
+					class="nav_collapse_close"
+				/>
+			</a>
+		</div>
+		<div class="testing"></div>
+		<script src="js/main.js"></script>
+	</body>
+</html>
+
