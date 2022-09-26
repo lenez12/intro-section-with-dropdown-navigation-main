@@ -65,6 +65,8 @@ a:visited {
 
 .section {
 	padding: 6rem 2rem 4rem;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 .devider-x {
@@ -92,7 +94,7 @@ a:visited {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem 0 2rem;
+	padding: 3rem 0 2rem;
 	box-sizing: border-box;
 	gap: 1rem;
 	margin: 0 auto;
@@ -276,6 +278,14 @@ a:visited {
 	box-sizing: border-box;
 }
 
+.description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 2rem;
+	overflow-wrap: break-word;
+}
+
 .home_description h1 {
 	font-size: 2.2rem;
 	font-weight: var(--font-weight-bold);
@@ -283,7 +293,8 @@ a:visited {
 }
 
 .home_description p {
-	font-size: 1rem;
+	font-size: 1.2rem;
+	margin: 0 1rem;
 	text-align: center;
 	margin-bottom: 1.5rem;
 	color: var(--medium-gray);
@@ -375,7 +386,7 @@ a:visited {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 2rem 0 2rem;
+		padding: 3rem 0 2rem;
 		box-sizing: border-box;
 		gap: 2rem;
 		margin: 0 auto;
@@ -392,7 +403,7 @@ a:visited {
 		width: 100%;
 		background-color: transparent;
 		top: 0;
-		right: 0;
+		right: 95%;
 		transition: 0.3s;
 		overflow-x: hidden;
 		overflow-y: auto;
@@ -413,7 +424,7 @@ a:visited {
 		grid-template-columns: repeat(4, 1fr);
 		gap: 2rem;
 		justify-content: center;
-		padding-left: 2rem;
+		padding-left: 6rem;
 		max-width: 50rem;
 	}
 
@@ -472,7 +483,7 @@ a:visited {
 	}
 	.home_content {
 		grid-template-areas: "home-description home-image";
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 30rem auto;
 		gap: 4rem;
 	}
 
@@ -497,13 +508,22 @@ a:visited {
 		justify-content: space-between;
 	}
 
+	.description {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-bottom: 2rem;
+		overflow-wrap: break-word;
+	}
+
 	.home_image {
-		height: 500px;
+		height: 75vh;
+		width: 100%;
 		/* object-fit: contain; */
 	}
 
 	.home_description h1 {
-		font-size: 4rem;
+		font-size: 3.5rem;
 		font-weight: var(--font-weight-bold);
 		margin-bottom: 1.5rem;
 	}
@@ -511,6 +531,7 @@ a:visited {
 	.home_description p {
 		font-size: 1rem;
 		text-align: left;
+		margin: 0 0;
 		margin-bottom: 1.5rem;
 		color: var(--medium-gray);
 		word-spacing: 2px;
@@ -526,5 +547,19 @@ a:visited {
 	.brand_image_content img {
 		height: 20px;
 		width: auto;
+	}
+}
+
+@media screen and (min-width: 1441px) {
+	.home_content {
+		grid-template-areas: "home-description home-image";
+		grid-template-columns: 35rem auto;
+		gap: 4rem;
+	}
+
+	.home_image {
+		height: 60vh;
+		width: 100%;
+		/* object-fit: contain; */
 	}
 }
