@@ -24,9 +24,8 @@ Your users should be able to:
 
 ### Screenshot
 
-    <img src="./screenshoot/desktop-preview.png"style="height:150px; width:300px; object-fit:cover" />
-
-    <img src="./screenshoot/mobile-preview.png" style="height:400px; width:200px; object-fit:contain" />
+<img src="./screenshoot/desktop-preview.png" style="height:200px; width:400px; object-fit:contain" />
+<img src="./screenshoot/mobile-preview.png" style="height:400px; width:200px; object-fit:contain" />
 
 ### Links
 
