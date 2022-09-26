@@ -29,8 +29,8 @@ Your users should be able to:
 
 ### Links
 
-- Source Code URL: [Source Github](https://github.com/lenez12/blogr-landing-page-main.git)
-- Live Site URL: [Demo Live](https://lenez-blogr.netlify.app/)
+- Source Code URL: [Source Github](https://github.com/lenez12/intro-section-with-dropdown-navigation-main.git)
+- Live Site URL: [Demo Live](https://lenez-intro-section.netlify.app/)
 
 ## My process
 
