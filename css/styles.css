@@ -557,17 +557,3 @@ a:visited {
 		width: auto;
 	}
 }
-
-@media screen and (min-width: 1841px) {
-	.home_content {
-		grid-template-areas: "home-description home-image";
-		grid-template-columns: 35rem auto;
-		gap: 4rem;
-	}
-
-	.home_image {
-		height: 80vh;
-		width: 100%;
-		/* object-fit: contain; */
-	}
-}
