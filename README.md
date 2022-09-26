@@ -73,6 +73,6 @@ what I learned in making this challenge is:
 
 ## Author
 
-- Frontend Mentor - [@Lenez](https://www.frontendmentor.io/profile/Lenez)
+- Frontend Mentor - [@Lenez](https://www.frontendmentor.io/profile/lenez12)
 - Twitter - [@prak_tech](https://www.twitter.com/prak_tech)
 
