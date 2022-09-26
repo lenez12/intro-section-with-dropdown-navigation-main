@@ -567,3 +567,31 @@ a:visited {
 		display: none;
 	}
 }
+
+@-moz-document url-prefix() {
+	@media screen and (min-width: 768px) {
+		.navbar_collapse {
+			position: relative;
+			height: auto;
+			/* max-height: var(--header-height); */
+			width: 100%;
+			background-color: transparent;
+			top: 0;
+			right: 0;
+			transition: 0.3s;
+			overflow-x: hidden;
+			overflow-y: auto;
+			transform: translate(0%, 0px);
+			-webkit-transform: translate(100%, 0px);
+			-ms-transform: translate(0%, 0px);
+			-moz-transform: translate(0%, 0px);
+			padding: 0rem 0rem 0rem;
+			box-sizing: border-box;
+			z-index: 109;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 30rem;
+		}
+	}
+}
