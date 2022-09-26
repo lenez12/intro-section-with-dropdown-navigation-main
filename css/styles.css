@@ -320,6 +320,10 @@ a:visited {
 	height: 20px;
 }
 
+.new_line {
+	display: none;
+}
+
 .testing {
 	height: 200vh;
 }
@@ -375,6 +379,10 @@ a:visited {
 		box-sizing: border-box;
 		padding: 0 1.5rem;
 		/* box-shadow: 0 0px 10px gray; */
+	}
+
+	.new_line {
+		display: inline;
 	}
 
 	.btn {
@@ -550,7 +558,7 @@ a:visited {
 	}
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1841px) {
 	.home_content {
 		grid-template-areas: "home-description home-image";
 		grid-template-columns: 35rem auto;
@@ -558,7 +566,7 @@ a:visited {
 	}
 
 	.home_image {
-		height: 60vh;
+		height: 80vh;
 		width: 100%;
 		/* object-fit: contain; */
 	}
